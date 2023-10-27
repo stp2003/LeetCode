@@ -3,19 +3,17 @@ class Solution {
     public boolean isHappy(int n) {
         
         int sum = 0;
-        while (n > 0) {
-            
-            int a = n % 10;
-            sum += a * a;
-            n /= 10;
-        }
         
-        if (sum == 1) {
-            return true;
-        } else if (sum == 4) {     // corner case as 4 will result in 4 at last of all the operaions.
-            return false;
+       while (n != 1 && n != 4) {
+        char[] digits = String.valueOf(n).toCharArray();
+        sum = 0;
+        for (char digitChar : digits) {
+            int digit = digitChar - '0';
+            sum += digit * digit;
         }
-        
-        return isHappy(sum);       
+        n = sum;
+    }
+    
+    return n == 1;
     }
 }
