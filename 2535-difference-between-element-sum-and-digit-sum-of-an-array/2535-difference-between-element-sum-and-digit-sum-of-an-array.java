@@ -11,7 +11,7 @@ class Solution {
         StringBuilder res = new StringBuilder();
 
         for (int i : nums) {
-            res.append(String.valueOf(i));
+            res.append(i);
         }
 
         for (int i = 0; i < res.length(); i++) {
