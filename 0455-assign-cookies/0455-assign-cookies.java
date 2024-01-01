@@ -12,7 +12,9 @@ class Solution {
         while (i < g.length && j < s.length) {
             if (s[j] < g[i]) {
                 j++;
-            } else {
+            } 
+            
+            else {
                 i++;
                 j++;
                 count++;
