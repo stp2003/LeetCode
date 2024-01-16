@@ -2,12 +2,15 @@ class RandomizedSet {
 
     List<Integer> res;
 
+    
     public RandomizedSet() {
+        
         res = new ArrayList<>();
     }
 
     
     public boolean insert(int val) {
+        
         if (res.contains(val)) {
             return false;
         }
@@ -19,7 +22,9 @@ class RandomizedSet {
 
     
     public boolean remove(int val) {
+        
         if (res.contains(val)) {
+            
             res.remove(Integer.valueOf(val));
             return true;
         }
@@ -29,6 +34,7 @@ class RandomizedSet {
 
     
     public int getRandom() {
+        
         int randomIndex = (int) (Math.random() * res.size());
         
         return res.get(randomIndex);
