@@ -19,8 +19,6 @@ class Solution
         
         
         return ( int ) rev;
-        
-       
-        
+      
     }
 }
