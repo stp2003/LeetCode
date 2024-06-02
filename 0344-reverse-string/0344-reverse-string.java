@@ -1,4 +1,5 @@
 class Solution {
+    
     public void reverseString(char[] s) {
         
         StringBuilder stringBuilder = new StringBuilder();
@@ -13,4 +14,3 @@ class Solution {
         
     }
 }
-
